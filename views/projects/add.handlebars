@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-8 mx-auto">
+    <div class="card card-body">
+      <h3>New Car Project</h3>
+      <form action="/projects" method="post">
+        <div class="form-group">
+          <label for="make">Make</label>
+          <input type="text" class="form-control" name="make" value="{{make}}" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="model">Model</label>
+          <input type="text" class="form-control" name="model" value="{{model}}" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input type="number" class="form-control" name="year" value="{{year}}" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="plans">Plans</label>
+          <textarea class="form-control" name="plans" autocomplete="off">{{plans}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
