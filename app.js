@@ -14,14 +14,13 @@ const app = express();
 
 const port = process.env.PORT || 5000;
 
-// #region config
+// #region Config
 
 // Passport config
 require('./config/passport')(passport);
 
 // DB config
 const db = require('./config/database');
-
 
 // #endregion
 
