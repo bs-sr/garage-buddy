@@ -101,7 +101,7 @@ router.post('', ensureAuthenticated, (req, res) => {
 });
 
 // Edit Project Form
-router.get('edit/:id', ensureAuthenticated, (req, res) => {
+router.get('/edit/:id', ensureAuthenticated, (req, res) => {
 
   // Query db for the specific project
   Project.findOne({
@@ -128,7 +128,7 @@ router.get('edit/:id', ensureAuthenticated, (req, res) => {
 });
 
 // Edit Form Process
-router.put(':id', ensureAuthenticated, (req, res) => {
+router.put('/:id', ensureAuthenticated, (req, res) => {
 
   // Query db for the specific project
   Project.findOne({
@@ -160,7 +160,7 @@ router.put(':id', ensureAuthenticated, (req, res) => {
 });
 
 // Delete Project
-router.delete(':id', ensureAuthenticated, (req, res) => {
+router.delete('/:id', ensureAuthenticated, (req, res) => {
   Project.deleteOne({
       _id: req.params.id
     })
