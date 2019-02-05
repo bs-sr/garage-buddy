@@ -99,6 +99,7 @@ app.use('/users', users);
 
 // Start the server
 app.listen(port, () => {
+  console.log('Launching...');
   startupDebug('Starting GarageBuddy App');
   startupDebug(`Server listening on port ${port}...`);
 });

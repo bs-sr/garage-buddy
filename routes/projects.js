@@ -166,7 +166,6 @@ router.delete('/:id', ensureAuthenticated, (req, res) => {
     })
     .then(() => {
       req.flash('success_msg', 'Project deleted.');
-      console.log(res.locals);
       res.redirect('/projects');
     })
     .catch(err => {
