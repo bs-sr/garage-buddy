@@ -40,14 +40,6 @@ router.get('', ensureAuthenticated, (req, res) => {
 // Add Project Form
 router.get('/add', ensureAuthenticated, (req, res) => {
       res.render('projects/add');
-    })
-    .catch(err => {
-      databaseDebug('ERROR while querying for all vehicles.');
-      databaseDebug(err);
-    });
-
-    
-
 });
 
 // Add Process Form
