@@ -1,0 +1,128 @@
+.primary {
+  color: #9e90b2 !important; }
+
+.info {
+  color: #2f4986 !important; }
+
+.success {
+  color: #65a66d !important; }
+
+.warning {
+  color: #e29635 !important; }
+
+.danger {
+  color: #f44336 !important; }
+
+.primary-bg {
+  background-color: #9e90b2 !important; }
+
+.info-bg {
+  background-color: #2f4986 !important; }
+
+.success-bg {
+  background-color: #65a66d !important; }
+
+.warning-bg {
+  background-color: #e29635 !important; }
+
+.danger-bg {
+  background-color: #f44336 !important; }
+
+.main-color {
+  color: #9E91B2 !important; }
+
+.dark-shade {
+  color: #2F4986 !important; }
+
+.light-shade {
+  color: #F6F4F4 !important; }
+
+.dark-accent {
+  color: #7F526C !important; }
+
+.light-accent {
+  color: #B87E75 !important; }
+
+.main-color-bg {
+  background-color: #9E91B2 !important; }
+
+.dark-shade-bg {
+  background-color: #2F4986 !important; }
+
+.light-shade-bg {
+  background-color: #F6F4F4 !important; }
+
+.dark-accent-bg {
+  background-color: #7F526C !important; }
+
+.light-accent-bg {
+  background-color: #B87E75 !important; }
+
+.tooltip-hover {
+  color: #2f4986; }
+
+a {
+  color: #2F4986; }
+  a:hover {
+    color: #F6F4F4; }
+
+select {
+  color: #2F4986;
+  background-color: #F6F4F4; }
+
+button.btn.dark-accent-bg:hover {
+  background-color: #B87E75 !important; }
+button.btn.btn-danger {
+  background-color: #f44336;
+  border-color: #f44336; }
+button.btn.btn-success {
+  background-color: #65a66d;
+  border-color: #65a66d; }
+
+.alert-danger {
+  background-color: #f44336; }
+
+.alert-success {
+  background-color: #65a66d; }
+
+.jumbotron {
+  box-shadow: 5px 5px 10px 0px #685b7d; }
+
+h1 {
+  font-weight: 500; }
+
+nav .dropdown-menu .dropdown-item {
+  width: 85%;
+  margin: 6px auto;
+  padding: 0px 0; }
+  nav .dropdown-menu .dropdown-item:hover {
+    color: #F6F4F4 !important;
+    background-color: #9E91B2;
+    border-color: black;
+    box-shadow: 0px 0px 8px 5px #9E91B2;
+    outline: 0 none; }
+nav .logo {
+  width: 110px;
+  height: 40px;
+  background-size: 110px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background: url("../img/logo-small-blue.png") no-repeat; }
+  nav .logo:hover {
+    background: url("../img/logo-small-gray.png") no-repeat; }
+nav .navbar-brand {
+  padding: 0px !important;
+  margin-right: 0px !important; }
+
+textarea#plans {
+  height: 200px;
+  white-space: pre-wrap; }
+  textarea#plans:focus {
+    border-color: #7F526C !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #7F526C;
+    outline: 0 none; }
+
+.plans {
+  white-space: pre-line; }
+
+/*# sourceMappingURL=app.css.map */

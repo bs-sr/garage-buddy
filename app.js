@@ -89,11 +89,13 @@ app.use((req, res, next) => {
 const index = require('./routes/index');
 const projects = require('./routes/projects');
 const users = require('./routes/users');
+const vehicles = require('./routes/vehicles');
 
 // Use Routes
 app.use('', index);
 app.use('/projects', projects);
 app.use('/users', users);
+app.use('/vehicles', vehicles);
 
 // #endregion
 

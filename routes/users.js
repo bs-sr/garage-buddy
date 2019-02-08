@@ -64,10 +64,13 @@ router.post('/register', (req, res) => {
     });
   }
 
-  // Password length
-  if(req.body.password.length < 5) {
-    errors.push( {
-      text: 'Password must be at least 6 characters long.'
+  // Minimum 6 characters, 
+  // at least one uppercase letter, 
+  // one lowercase letter, one number, 
+  // and one special character
+  if (!req.body.password.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/)) {
+    errors.push({
+      text: 'Password does not match requirements.'
     });
   }
 
@@ -103,7 +106,7 @@ router.post('/register', (req, res) => {
           bcrypt.genSalt(10, (err, salt) => {
             bcrypt.hash(newUser.password, salt, (err, hash) => {
               if (err) {
-                usersDebug('ERROR with bcrypt password hash.')
+                usersDebug('ERROR with bcrypt password hash.');
                 usersDebug(err);
                 return;
               } else {

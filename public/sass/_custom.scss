@@ -1,0 +1,52 @@
+.tooltip-hover {
+  color: $info;
+}
+
+a {
+  color: $dark-shade;
+
+  &:hover {
+    color: $light-shade;
+  }
+}
+
+select{
+  color: $dark-shade;
+  background-color: $light-shade;
+}
+
+button {
+  &.btn{
+    &.dark-accent-bg:hover{
+      background-color: $light-accent !important;
+    }
+
+    &.btn-danger {
+      background-color: $danger;
+      border-color: $danger;
+    }
+
+    &.btn-success {
+      background-color: $success;
+      border-color: $success;
+    }
+  }
+
+}
+
+.alert-danger {
+  background-color: $danger;
+}
+
+.alert-success {
+  background-color: $success;
+}
+
+
+.jumbotron {
+  box-shadow: 5px 5px 10px 0px $main-color-dark;
+}
+
+h1 {
+  font-weight: 500;
+}
