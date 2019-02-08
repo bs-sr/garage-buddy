@@ -10,6 +10,10 @@ const {ensureAuthenticated} = require('../helpers/auth');
 require('../models/Project');
 const Project = mongoose.model('projects');
 
+// Load Vehicle Model
+require('../models/Vehicle');
+const Vehicle = mongoose.model('vehicles');
+
 // Projects Index Page
 router.get('', ensureAuthenticated, (req, res) => {
 
@@ -21,6 +25,7 @@ router.get('', ensureAuthenticated, (req, res) => {
       date: 'desc'
     })
     .then(projects => {
+      console.log(projects);
       res.render('projects/index', {
         projects: projects
       });
@@ -34,7 +39,33 @@ router.get('', ensureAuthenticated, (req, res) => {
 
 // Add Project Form
 router.get('/add', ensureAuthenticated, (req, res) => {
-  res.render('projects/add');
+
+  // Query db for vehicles
+  Vehicle.find({})
+    .then(vehicles => {
+
+      const years = [];
+      const makes = [];
+      const models = [];
+
+      vehicles.forEach( (vehicle) => {
+        years.push(vehicle.year);
+        makes.push(vehicle.make);
+        models.push(vehicle.model);
+      });
+
+      res.render('projects/add', {
+        years: years
+      });
+
+    })
+    .catch(err => {
+      databaseDebug('ERROR while querying for all vehicles.');
+      databaseDebug(err);
+    });
+
+    
+
 });
 
 // Add Process Form
@@ -136,9 +167,6 @@ router.put('/:id', ensureAuthenticated, (req, res) => {
     })
     .then(project => {
       // Update values
-      project.make = req.body.make;
-      project.model = req.body.model;
-      project.year = req.body.year;
       project.plans = req.body.plans;
 
       project.save()
