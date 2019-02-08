@@ -1,0 +1,98 @@
+$main-color: #9E91B2;
+$light-accent: #B87E75;
+$dark-accent: #7F526C;
+$light-shade: #F6F4F4;
+$dark-shade: #2F4986;
+
+$main-color-dark: #685b7d;
+
+$primary: #9e90b2;
+$info: #2f4986;
+$success: #65a66d;
+$warning: #e29635;
+$danger: #f44336;
+
+.primary {
+  color: $primary !important;
+}
+
+.info {
+  color: $info !important;
+}
+
+.success {
+  color: $success !important;
+}
+
+.warning {
+  color: $warning !important;
+}
+
+.danger {
+  color: $danger !important;
+}
+
+
+
+.primary-bg {
+  background-color: $primary !important;
+}
+
+.info-bg {
+  background-color: $info !important;
+}
+
+.success-bg {
+  background-color: $success !important;
+}
+
+.warning-bg {
+  background-color: $warning !important;
+}
+
+.danger-bg {
+  background-color: $danger !important;
+}
+
+
+
+
+.main-color {
+  color: $main-color !important;
+}
+
+.dark-shade {
+  color: $dark-shade !important;
+}
+
+.light-shade {
+  color: $light-shade !important;
+}
+
+.dark-accent {
+  color: $dark-accent !important;
+}
+
+.light-accent {
+  color: $light-accent !important;
+}
+
+.main-color-bg {
+  background-color: $main-color !important;
+}
+
+.dark-shade-bg {
+  background-color: $dark-shade !important;
+}
+
+.light-shade-bg {
+  background-color: $light-shade !important;
+}
+
+.dark-accent-bg {
+  background-color: $dark-accent !important;
+}
+
+.light-accent-bg {
+  background-color: $light-accent !important;
+}

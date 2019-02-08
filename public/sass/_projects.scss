@@ -1,0 +1,17 @@
+textarea{
+  &#plans {
+    height: 200px;
+    white-space: pre-wrap;
+
+    &:focus{
+      border-color: $dark-accent !important;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+      0 0 8px $dark-accent;
+      outline: 0 none;
+    }
+  }
+}
+
+.plans {
+  white-space: pre-line;
+}
