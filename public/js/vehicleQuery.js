@@ -20,7 +20,7 @@ function vehicleQuery() {
     $makeDropdown.append('<option selected="true" disabled>Select Make</option>');
     $modelDropdown.append('<option selected="true" disabled>Select Model</option>');
 
-    const url = 'http://garage-buddy.herokuapp.com/vehicles/';
+    const url = 'https://garage-buddy.herokuapp.com/vehicles/';
 
     let years = [];
     let makes = [];
