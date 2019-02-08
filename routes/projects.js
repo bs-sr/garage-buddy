@@ -39,25 +39,7 @@ router.get('', ensureAuthenticated, (req, res) => {
 
 // Add Project Form
 router.get('/add', ensureAuthenticated, (req, res) => {
-
-  // Query db for vehicles
-  Vehicle.find({})
-    .then(vehicles => {
-
-      const years = [];
-      const makes = [];
-      const models = [];
-
-      vehicles.forEach( (vehicle) => {
-        years.push(vehicle.year);
-        makes.push(vehicle.make);
-        models.push(vehicle.model);
-      });
-
-      res.render('projects/add', {
-        years: years
-      });
-
+      res.render('projects/add');
     })
     .catch(err => {
       databaseDebug('ERROR while querying for all vehicles.');
